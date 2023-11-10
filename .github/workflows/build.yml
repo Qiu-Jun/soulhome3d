@@ -5,7 +5,7 @@ on:
     branches: ['main']
 
 jobs: 
-  build:
+  build_soul:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -26,7 +26,7 @@ jobs:
           pnpm install
           pnpm build
 
-       - name: Deploy
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
