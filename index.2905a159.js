@@ -1998,6 +1998,4 @@ h.setPixelRatio(window.devicePixelRatio),document.body.appendChild(h.domElement)
 h.render(e,r);let c=new o.OrbitControls(r,h.domElement);!function t(){h.render(e,r),s.rotateY(-.002),s.rotateX(.002),c.update(),requestAnimationFrame(t)}();let u=null,d=(e,t)=>{let a=new o.Raycaster,l=new o.Vector2;// 返回物体和射线的焦点
 return(//将鼠标位置转换成设备坐标。x和y方向的取值范围是(-1 to 1)
 e=e/i*2-1,t=-(2*(t/n))+1,l.set(e,t),//通过摄像机和鼠标位置更新射线
-a.setFromCamera(l,r),a.intersectObject(s,!0))};window.addEventListener("click",e=>{e.preventDefault(),u&&(console.log(u),u.material.color.set("#ffffff"),u=null);let t=d(e.layerX,e.layerY);if(t.length>0){let e=t.filter(function(e){return e&&e.object})[0];e&&e.object&&(console.log(e),(u=e.object).material.color.set("#ffc466"))}},!1)})();//# sourceMappingURL=index.85eb7435.js.map
-
-//# sourceMappingURL=index.85eb7435.js.map
+a.setFromCamera(l,r),a.intersectObject(s,!0))};window.addEventListener("click",e=>{e.preventDefault(),u&&(console.log(u),u.material.color.set("#ffffff"),u=null);let t=d(e.layerX,e.layerY);if(t.length>0){let e=t.filter(function(e){return e&&e.object})[0];e&&e.object&&(console.log(e),(u=e.object).material.color.set("#ffc466"))}},!1)})();
