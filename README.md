@@ -9,3 +9,5 @@ pnpm dev
 # 打包
 pnpm build
 ```
+
+#### [体验地址](https://qiu-jun.github.io/soulhome3d/)
